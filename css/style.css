@@ -1,13 +1,11 @@
-/* ********************* */
-/* HEADER */
-/* ********************* */
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
 
-  /* Because we want to be sticky later */
+  /* Setting for sticky header */
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
@@ -17,10 +15,7 @@
   height: 2.2rem;
 }
 
-/* ********************* */
-/* NAVIGATION */
-/* ********************* */
-
+/* Navigation */
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -56,7 +51,7 @@
   background-color: #cf711f;
 }
 
-/* MOBILE */
+/* Mobile version */
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -75,10 +70,25 @@
   display: none;
 }
 
-/* ********************* */
-/* HERO SECTION */
-/* ********************* */
+/* Sticky navigation */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+}
 
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/* Hero section */
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -137,10 +147,7 @@
   font-weight: 700;
 }
 
-/* ********************* */
-/* FEATURED IN SECTION */
-/* ********************* */
-
+/* Featured in section */
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
@@ -166,10 +173,7 @@
   opacity: 50%;
 }
 
-/* ********************* */
-/* HOW IT WORKS SECTION */
-/* ********************* */
-
+/* How it works section */
 .section-how {
   padding: 9.6rem 0;
 }
@@ -222,10 +226,7 @@
   width: 35%;
 }
 
-/* ********************* */
-/* MEALS SECTION */
-/* ********************* */
-
+/* Meal section */
 .section-meals {
   padding: 9.6rem 0;
 }
@@ -310,10 +311,7 @@
   font-size: 1.8rem;
 }
 
-/* ********************* */
-/* TESTIMONIALS SECTION */
-/* ********************* */
-
+/* Testimonials section */
 .section-testimonials {
   background-color: #fdf2e9;
   display: grid;
@@ -370,10 +368,7 @@
   transform: scale(1.1);
 }
 
-/* ********************* */
-/* PRICING SECTION */
-/* ********************* */
-
+/* Pricing section */
 .section-pricing {
   padding: 9.6rem 0;
 }
@@ -477,10 +472,7 @@
   line-height: 1.8;
 }
 
-/* ********************* */
-/* CTA SECTION */
-/* ********************* */
-
+/* CTA section */
 .section-cta {
   padding: 4.8rem 0 12.8rem;
 }
@@ -554,10 +546,7 @@
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
-/* ********************* */
-/* FOOTER */
-/* ********************* */
-
+/* Footer */
 .footer {
   padding: 12.8rem 0;
   border-top: 1px solid #eee;
